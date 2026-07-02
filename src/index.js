@@ -14,7 +14,7 @@ dotenv.config();
 const app = express();
 app.use(cookieParser());
 app.use(cors({
-  origin: 'http://localhost:3000', // frontend ka URL
+  origin: 'https://dev-match-frontend-three.vercel.app', // frontend ka URL
   credentials: true, // cookie bhejne ke liye
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // allowed methods
   allowHeaders: ['Content-Type', 'Authorization'], // allowed headers
